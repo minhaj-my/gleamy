@@ -1,0 +1,198 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #000000;
+  --color-white: #fafafa;
+  --color-primary: #ff7e21;
+  --color-angle-scroller: #212121;
+  --color-hero-subtext: #6e6e6e;
+
+  --font-poppins: "Poppins", sans-serif;
+  --font-roboto: "Roboto", sans-serif;
+  --font-open-sans: "Open Sans", sans-serif;
+
+  --text-xs: 0.625rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-md: 1.5rem;
+  --text-lg: 2rem;
+  --text-xl: 2.5rem;
+  --text-hero: 5.625rem;
+
+  --leading-tight: 1.1;
+  --leading-snug: 1.4;
+  --leading-normal: 1.6;
+  --leading-relaxed: 1.7;
+  --leading-loose: 1.9;
+
+  --tracking-none: 0;
+  --tracking-sm: 0.02em;
+  --tracking-md: 0.04em;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  color: var(--color-white);
+  font-family: var(--font-poppins);
+  background-color: var(--color-bg);
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+@layer components {
+  /* ── Hero Text ── */
+  /* clamp(2.625rem → 5.625rem) fluid between 320px–1024px */
+  .hero-text {
+    font-family: var(--font-poppins);
+    font-size: clamp(2.625rem, 4vw + 1.75rem, var(--text-hero));
+    line-height: var(--leading-relaxed);
+    letter-spacing: var(--tracking-none);
+    color: var(--color-white);
+
+    span {
+      color: var(--color-primary);
+    }
+
+    .subtitle {
+      font-size: var(--text-base);
+      line-height: var(--leading-loose);
+      letter-spacing: var(--tracking-sm);
+      color: var(--color-hero-subtext);
+    }
+  }
+
+  /* ── Navbar Text ── */
+  .navbar-text {
+    font-family: var(--font-poppins);
+    font-size: var(--text-sm);
+    line-height: var(--leading-relaxed);
+    letter-spacing: var(--tracking-md);
+    text-transform: uppercase;
+    color: var(--color-white);
+
+    a {
+      color: var(--color-white);
+      text-decoration: none;
+
+      &:hover {
+        color: var(--color-primary);
+      }
+    }
+  }
+
+  /* ── Side Text ── */
+  .side-text {
+    font-family: var(--font-roboto);
+    font-size: var(--text-sm);
+    letter-spacing: var(--tracking-md);
+    text-transform: uppercase;
+    color: var(--color-hero-subtext);
+  }
+
+  /* ── Style Text ── */
+  .style-text {
+    font-family: var(--font-roboto);
+    font-size: var(--text-lg);
+    letter-spacing: var(--tracking-none);
+    text-transform: uppercase;
+    color: var(--color-white);
+  }
+
+  /* ── Heading 2 ── */
+  /* clamp(1.75rem → 2.5rem) fluid between 320px–1024px */
+  .heading-2 {
+    font-family: var(--font-poppins);
+    font-size: clamp(1.75rem, 2vw + 1.125rem, var(--text-xl));
+    line-height: var(--leading-loose);
+    letter-spacing: var(--tracking-sm);
+    text-transform: uppercase;
+    color: var(--color-white);
+
+    span {
+      color: var(--color-primary);
+    }
+  }
+
+  /* ── Heading 3 ── */
+  /* clamp(1.375rem → 2rem) fluid between 320px–1024px */
+  .heading-3 {
+    font-family: var(--font-poppins);
+    font-size: clamp(1.375rem, 1.5vw + 0.875rem, var(--text-lg));
+    line-height: var(--leading-loose);
+    letter-spacing: var(--tracking-sm);
+    text-transform: uppercase;
+    color: var(--color-white);
+
+    span {
+      color: var(--color-primary);
+    }
+  }
+
+  /* ── Services Heading 3 ── */
+  .services-h3 {
+    font-family: var(--font-poppins);
+    font-size: clamp(1.375rem, 1.5vw + 0.875rem, var(--text-lg));
+    line-height: var(--leading-normal);
+    letter-spacing: var(--tracking-sm);
+    text-transform: capitalize;
+    color: var(--color-white);
+
+    p {
+      font-size: var(--text-base);
+      line-height: var(--leading-loose);
+      color: var(--color-hero-subtext);
+      margin-top: 0.5rem;
+    }
+  }
+
+  /* ── Body Paragraph ── */
+  .body-text {
+    font-family: var(--font-poppins);
+    font-size: var(--text-base);
+    line-height: var(--leading-loose);
+    letter-spacing: var(--tracking-sm);
+    text-transform: capitalize;
+    color: var(--color-hero-subtext);
+
+    strong {
+      color: var(--color-white);
+      font-weight: 400;
+    }
+  }
+
+  /* ── Button Text ── */
+  .button-text {
+    font-family: var(--font-open-sans);
+    font-size: var(--text-md);
+    letter-spacing: var(--tracking-md);
+    text-transform: capitalize;
+    color: var(--color-primary);
+
+    &:hover {
+      color: var(--color-white);
+    }
+  }
+
+  /* ── Portfolio Text ── */
+  .portfolio-text {
+    font-family: var(--font-poppins);
+    font-size: var(--text-md);
+    line-height: var(--leading-relaxed);
+    letter-spacing: var(--tracking-sm);
+    text-transform: capitalize;
+    color: var(--color-white);
+
+    .portfolio-p {
+      font-family: var(--font-open-sans);
+      font-size: var(--text-base);
+      line-height: var(--leading-relaxed);
+      letter-spacing: var(--tracking-sm);
+      text-transform: capitalize;
+      color: var(--color-hero-subtext);
+      margin-top: 0.5rem;
+    }
+  }
+}
