@@ -13,8 +13,9 @@ import sLogo from "./S.png";
 import searchIcon from "./Search.png";
 import watchVideo from "./watch_video.png";
 import creativeText from "./we are the cre8tive.png";
-
+import vector from "./Vector.png";
 export {
+  vector,
   logo2nd,
   favicon,
   gLogo,

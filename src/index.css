@@ -27,7 +27,15 @@
 
   --tracking-none: 0;
   --tracking-sm: 0.02em;
+  --animate-fade-in: fade-in 0.9s ease-out;
+  --animate-fade-pulse: fade-pulse 3s ease-in-out infinite alternate;
   --tracking-md: 0.04em;
+}
+
+:root {
+  --font-poppins: "Poppins", sans-serif;
+  --font-roboto: "Roboto", sans-serif;
+  --font-open-sans: "Open Sans", sans-serif;
 }
 
 html,
@@ -35,12 +43,8 @@ body {
   scroll-behavior: smooth;
   overflow-x: hidden;
   color: var(--color-white);
-  font-family: var(--font-poppins);
+  /* font-family: var(--font-poppins); */
   background-color: var(--color-bg);
-}
-img {
-  max-width: 100%;
-  display: block;
 }
 @layer components {
   /* ── Hero Text ── */
@@ -194,5 +198,26 @@ img {
       color: var(--color-hero-subtext);
       margin-top: 0.5rem;
     }
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fade-pulse {
+  from {
+    opacity: 0.3;
+    transform: scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
   }
 }

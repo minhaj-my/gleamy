@@ -1,16 +1,14 @@
 import { motion } from "motion/react";
 import { logo } from "../assets";
 
-// Total cycle: 6s draw+hold, then restart
-const DRAW_DURATION = 3;
-const HOLD_DURATION = 1;
+const DRAW_DURATION = 1.3;
+const HOLD_DURATION = 0.5;
 const FADE_DURATION = 0.5;
 const TOTAL = DRAW_DURATION + HOLD_DURATION + FADE_DURATION;
 
 export const Loader = () => {
   return (
     <div className="flex h-screen items-center justify-center">
-      {/* G Letter — draws in, holds, fades out */}
       <motion.svg
         width="255"
         height="378"
@@ -32,10 +30,10 @@ export const Loader = () => {
             duration: TOTAL,
             ease: "easeInOut",
             times: [
-              0, // start
-              DRAW_DURATION / TOTAL, // fully drawn
-              (DRAW_DURATION + HOLD_DURATION) / TOTAL, // hold ends
-              1, // fade out
+              0,
+              DRAW_DURATION / TOTAL,
+              (DRAW_DURATION + HOLD_DURATION) / TOTAL,
+              1,
             ],
             repeat: Infinity,
             repeatDelay: 0.3,
@@ -43,7 +41,6 @@ export const Loader = () => {
         />
       </motion.svg>
 
-      {/* Logo — fades in while G is held, exits with G */}
       <motion.img
         src={logo}
         className="absolute z-10"
@@ -55,11 +52,11 @@ export const Loader = () => {
           duration: TOTAL,
           ease: "easeOut",
           times: [
-            0, // hidden at start
-            DRAW_DURATION / TOTAL, // still hidden while drawing
-            (DRAW_DURATION + 0.3) / TOTAL, // fades in quickly
-            (DRAW_DURATION + HOLD_DURATION) / TOTAL, // holds
-            1, // exits with G
+            0,
+            DRAW_DURATION / TOTAL,
+            (DRAW_DURATION + 0.8) / TOTAL,
+            (DRAW_DURATION + HOLD_DURATION) / TOTAL,
+            1,
           ],
           repeat: Infinity,
           repeatDelay: 0.3,
