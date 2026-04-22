@@ -33,6 +33,8 @@ export const AngleScroller = () => {
         <div className="flex animate-marquee">
           <List textColor="text-white" />
           <List textColor="text-white" />
+          <List textColor="text-white" />
+          <List textColor="text-white" />
         </div>
       </div>
 
