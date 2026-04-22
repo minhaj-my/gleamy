@@ -37,7 +37,9 @@ export const AngleScroller = () => {
       </div>
 
       <div className="fixed bottom-118 top-10 left-1/2 -translate-x-1/2 w-[200vw] h-18 bg-white overflow-hidden -z-60 rotate-[40deg] flex items-center">
-        <div className="flex animate-marquee">
+        <div className="flex animate-marquee ">
+          <List textColor="text-black" />
+          <List textColor="text-black" />
           <List textColor="text-black" />
           <List textColor="text-black" />
         </div>
