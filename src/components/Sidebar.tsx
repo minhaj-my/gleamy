@@ -42,7 +42,6 @@ export const Sidebar = () => {
 
   return (
     <>
-      {/* Trigger button — wire this into your Nav's MENU button */}
       <button
         onClick={() => setIsOpen(true)}
         className="pl-4 flex hover:brightness-50 transition-all cursor-pointer items-center"
@@ -52,7 +51,7 @@ export const Sidebar = () => {
 
       {isOpen && (
         <div
-          className="fixed inset-0 bg-black/10 z-40 backdrop-blur-sm"
+          className="fixed inset-0 bg-black/50 z-40 backdrop-blur-md"
           onClick={() => setIsOpen(false)}
         />
       )}
