@@ -27,6 +27,7 @@
 
   --tracking-none: 0;
   --tracking-sm: 0.02em;
+  --animate-marquee: marquee 25s linear infinite;
   --animate-fade-in: fade-in 0.9s ease-out;
   --animate-fade-pulse: fade-pulse 3s ease-in-out infinite alternate;
   --tracking-md: 0.04em;
@@ -219,5 +220,13 @@ body {
   to {
     opacity: 1;
     transform: scale(1);
+  }
+}
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
   }
 }

@@ -11,7 +11,7 @@ export const Nav = () => {
   ];
 
   return (
-    <nav className="flex animate-fade-in items-center  justify-between p-4">
+    <nav className="flex   animate-fade-in items-center  justify-between p-4">
       {" "}
       <ul className="flex items-center gap-2">
         {navItems.map((item, index) => (
@@ -57,13 +57,6 @@ export const Nav = () => {
           <a className="hover:text-orange-500 transition-colors">
             <p className="font-poppins pl-8 max-md:hidden ">MENU</p>
           </a>
-          {/*
-
-          <a className="pl-4 flex hover:brightness-50 transition-all cursor-pointer items-center">
-            <img src={menuIcon} />
-          </a>
-
-            */}
           <Sidebar />
         </div>
       </div>

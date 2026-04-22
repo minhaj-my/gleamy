@@ -14,7 +14,9 @@ import searchIcon from "./Search.png";
 import watchVideo from "./watch_video.png";
 import creativeText from "./we are the cre8tive.png";
 import vector from "./Vector.png";
+import elipse from "./Ellipse.svg";
 export {
+  elipse,
   vector,
   logo2nd,
   favicon,
