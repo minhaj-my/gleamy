@@ -11,7 +11,7 @@ export const Nav = () => {
   ];
 
   return (
-    <nav className="flex   animate-fade-in items-center  justify-between p-4">
+    <nav className="flex relative  z-10    animate-fade-in items-center  justify-between p-4">
       {" "}
       <ul className="flex items-center gap-2">
         {navItems.map((item, index) => (
@@ -42,8 +42,8 @@ export const Nav = () => {
         alt="Logo"
         className="h-8  animate-fade-pulse ax-md:h6 max-sm:h5 w-auto object-contain"
       />
-      <div className="flex items-center justify-center  ">
-        <a className="pr-8 max-md:pr-4 max-sm:pr-2">
+      <div className="flex z-100  items-center justify-center  ">
+        <a className="pr-8  max-md:pr-4 max-sm:pr-2">
           <img
             className="hover:brightness-50 transition-all cursor-pointer"
             src={searchIcon}

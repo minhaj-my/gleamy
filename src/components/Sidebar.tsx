@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { menuIcon } from "../assets";
 
-const navLinks = [
+type PageKey = keyof typeof pages;
+const navLinks: { id: PageKey; label: string }[] = [
   { id: "about", label: "About Us" },
   { id: "services", label: "Services" },
   { id: "portfolio", label: "Portfolio" },
@@ -38,7 +39,8 @@ const pages = {
 
 export const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [activePage, setActivePage] = useState("about");
+  type PageKey = keyof typeof pages;
+  const [activePage, setActivePage] = useState<PageKey>("about");
 
   return (
     <>

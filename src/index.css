@@ -48,8 +48,6 @@ body {
   background-color: var(--color-bg);
 }
 @layer components {
-  /* ── Hero Text ── */
-  /* clamp(2.625rem → 5.625rem) fluid between 320px–1024px */
   .hero-text {
     font-family: var(--font-poppins);
     font-size: clamp(2.625rem, 4vw + 1.75rem, var(--text-hero));

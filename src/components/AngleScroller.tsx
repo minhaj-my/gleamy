@@ -29,21 +29,29 @@ export const AngleScroller = () => {
 
   return (
     <>
-      <div className="fixed -bottom-4 left-0 w-[110vw] h-18 bg-[#111] -rotate-8 origin-bottom-left overflow-hidden -z-50 -ml-[5vw] flex items-center">
-        <div className="flex animate-marquee">
-          <List textColor="text-white" />
-          <List textColor="text-white" />
-          <List textColor="text-white" />
-          <List textColor="text-white" />
-        </div>
-      </div>
+      {/*
 
-      <div className="fixed bottom-118 top-10 left-1/2 -translate-x-1/2 w-[200vw] h-18 bg-white overflow-hidden -z-60 rotate-[40deg] flex items-center">
+    <div className="fixed -bottom-4 left-0 w-[110vw] h-18 bg-[#111] -rotate-8 origin-bottom-left overflow-hidden -z-50 -ml-[5vw] flex items-center">
+      
+      */}
+
+      <div
+        className="fixed bottom-118 -top-12  max-md:-top-24    left-[52%] -translate-x-[48%] w-[200vw] h-18 bg-white overflow-hidden z-0 max-sm:-z-30
+      rotate-45 flex items-center"
+      >
         <div className="flex animate-marquee ">
           <List textColor="text-black" />
           <List textColor="text-black" />
           <List textColor="text-black" />
           <List textColor="text-black" />
+        </div>
+      </div>
+      <div className="fixed -bottom-4 left-0 w-[110vw] h-18 bg-[#111] -rotate-12 origin-bottom-left overflow-hidden z-0 -ml-[5vw] flex max-sm:-z-30 items-center">
+        <div className="flex animate-marquee">
+          <List textColor="text-white" />
+          <List textColor="text-white" />
+          <List textColor="text-white" />
+          <List textColor="text-white" />
         </div>
       </div>
     </>

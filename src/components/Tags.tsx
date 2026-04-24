@@ -3,7 +3,7 @@ export const Tag = () => {
   const items = ["digital marketing", "designing", "development"];
 
   return (
-    <div className="absolute flex flex-row justify-center items-center gap-10 -rotate-90 origin-left top-148  max-sm:top-150 max-sm:left-8 max-md:left-15 max-md:top-170 left-18">
+    <div className="absolute flex flex-row justify-center items-center gap-10 -rotate-90 origin-left  top-152  max-sm:top-150 max-sm:left-8 max-md:left-15 max-md:top-170 left-10">
       {items.map((label) => (
         <span
           key={label}
