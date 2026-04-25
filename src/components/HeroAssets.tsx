@@ -15,7 +15,7 @@ export const HeroAssets = () => {
 
       <img
         src={gLogo}
-        className="absolute left-[16%]  max-md:top-1/4 top-1/4 max-md:left-1/2 -translate-x-1/2 "
+        className="absolute left-[16%] w-42  max-md:top-1/4 top-1/4 max-md:left-1/2 -translate-x-1/2 "
       />
     </>
   );

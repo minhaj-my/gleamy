@@ -22,8 +22,8 @@ export const HeroText = () => {
     <div>
       <h1
         className=" absolute  max-md:max-w-100 w-max max-w-[90vw] sm:max-w-248
-        mt-[clamp(8rem,15vw,9.5rem)] z-5 text-[clamp(2rem,8vw,6rem)] ml-[clamp(1.5rem,18vw,17rem)]   flex
-        flex-col items-start gap-y-[clamp(0.5rem,3vw,3rem)] leading-none  max-sm:ml-0 max-sm:pl-12 max-sm:pt-12"
+        mt-16 z-5 text-[clamp(2rem,8vw,4rem)] ml-[clamp(1.5rem,18vw,12rem)]    flex
+        flex-col items-start gap-y-[clamp(0.5rem,3vw,3rem)] leading-none  max-sm:ml-0 max-sm:pl-12 max-md:pt-12 max-sm:pt-28"
       >
         <span className="block">
           <SlideIn text="Brand." />
