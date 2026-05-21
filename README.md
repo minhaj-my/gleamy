@@ -11,21 +11,14 @@
         
 <h3><b>Figma</b> design To — <em>smooth, animated, and interactive.</em> website </h3>
 
-<table border="0" cellpadding="0" cellspacing="0" style="border: none;" >
-<tr style="border: none">
-<td><img src="src/assets/gleamy.png" width="800" alt="Preview" /></td>
-<td valign="middle" width="400" >
+<div align="center">
+<img src="src/assets/gleamy.png" width="600" alt="Preview" />
 
 [![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
 [![Motion](https://img.shields.io/badge/Motion-black?style=for-the-badge&logo=framer&logoColor=white)](https://motion.dev/)
 [![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)](https://figma.com/)
 [![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
-
-</td>
-</tr>
-</table>
 </div>
-
 # Gleamy?
 
 **Gleamy** started as a static Figma mockup — it's now a fully interactive web experience powered by React and Motion. Every transition, hover, and scroll interaction has been crafted to feel fluid and alive.
