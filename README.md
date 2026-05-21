@@ -9,8 +9,6 @@
    ╚═════╝ ╚══════╝╚══════╝╚═╝  ╚═╝╚═╝     ╚═╝   ╚═╝   
 ```
         
- **—  — —**
- 
 <h3><b>Figma</b> design To — <em>smooth, animated, and interactive.</em> website </h3>
 
 <table border="0" cellpadding="0" cellspacing="0" style="border: none;" >
