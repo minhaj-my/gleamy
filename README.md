@@ -27,7 +27,7 @@
 ---
 
 ## 🎬 Preview
-![video](src/assets/gleamy.mp4)
+![video](src/assets/gleamy.gif)
 
 
 - 🎨 **Pixel-perfect Figma to React** — every component faithfully translated from the original design
